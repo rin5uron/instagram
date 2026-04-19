@@ -38,20 +38,26 @@
 ## リポジトリ構成
 
 ```
-├── templates/              投稿テンプレート
-│   └── post-template.md   固定フォーマット
-├── scripts/               台本置き場
-│   ├── generate-script.md 台本生成ガイド
-│   ├── 001.md            台本1
-│   ├── 002.md            台本2
+├── templates/                      投稿テンプレート
+│   ├── post-template.md           固定フォーマット
+│   └── video-script-format.md     動画構成（30秒固定型）
+├── scripts/                       台本置き場
+│   ├── generate-script.md         台本生成ガイド
+│   ├── 001.md                    台本1
+│   ├── 002.md                    台本2
 │   └── ...
-└── README.md             このファイル
+└── README.md                      このファイル
 ```
+
+## テンプレート
+
+- [投稿フォーマット](templates/post-template.md) - キャプション構成と世界観
+- [動画構成（30秒固定型）](templates/video-script-format.md) - タイムライン別の撮影内容
 
 ## 使い方
 
-1. `scripts/generate-script.md` を参照して台本を作成
-2. `templates/post-template.md` のフォーマットに従う
+1. [動画構成テンプレート](templates/video-script-format.md) を確認
+2. `scripts/generate-script.md` を参照して台本を作成
 3. 生成した台本を `scripts/` に番号順で保存
 4. 撮影・投稿
 
@@ -63,6 +69,6 @@
 - 運用上の課題
 - フェーズ移行の検討事項
 
-## 目標
+## 目標（5月中）
 
 30投稿達成後、分析フェーズへ移行
