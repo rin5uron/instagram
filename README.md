@@ -5,6 +5,16 @@
 
 ---
 
+## 投稿ワークフロー
+
+毎回この流れで作る。
+
+1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使って `scripts/NNN.md` を作成
+2. **撮影・編集・投稿**
+3. **issueで振り返り** → 再生数が出たらissueに記録・分析
+
+---
+
 ## 2アカウント構成
 
 | | アカウント | コンセプト | プラットフォーム |
