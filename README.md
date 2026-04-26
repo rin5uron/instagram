@@ -20,7 +20,7 @@
 | | アカウント | コンセプト | プラットフォーム |
 |---|---|---|---|
 | **メイン** | ringo__note | 管理栄養士 × AI料理レシピ | Instagram |
-| **サブ** | （未定） | AIスキル発信・検証・ツール紹介 | Instagram + YouTube + Twitter |
+| **サブ** | ringonote_ai | AIスキル発信・検証・ツール紹介 | Instagram + YouTube + Twitter |
 
 ---
 
