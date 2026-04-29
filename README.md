@@ -1,207 +1,117 @@
-# Instagram / YouTube 2アカウント運用プロジェクト
+---
+project: SNS運用プロジェクト
+last_updated: "2026-04-29"
+---
 
-**運営者:** ringo__note  
-**開始:** 2026年4月  
-**最終更新:** 2026年4月29日
+# SNS運用プロジェクト マスターダッシュボード
+
+## プラットフォーム一覧
+
+| プラットフォーム | アカウント | コード | 状態 |
+|---|---|---|---|
+| Instagram | ringo__note（栄養士） | `[RN]` | 運用中 |
+| Instagram | ringonote_ai（AIスキル） | `[AI]` | 運用中 |
+| YouTube | ringonote22@gmail.com | `[YT]` | 準備中 |
+| YouTube Shorts | 同上 | `[YT]` | Instaストック後に開始 |
+| TikTok | 未設定 | `[TK]` | YouTube本編後に開始 |
+
+## 投稿フロー
+
+```
+短尺: ringo-note / ringonote-ai Instagram
+        ↓ ストック溜まり次第
+      YouTube Shorts へ流用
+
+長尺: YouTube本編
+        ↓ 公開後
+      TikTok へ流用
+```
 
 ---
 
 ## 投稿ワークフロー
 
-毎回この流れで作る。
-
-1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使って台本作成
+1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使用
 2. **撮影・編集・投稿**
-3. **issueで振り返り** → 再生数が出たらissueに記録・分析
+3. **issueで振り返り** → 再生数が出たらissueに記録
 
 ---
 
-## 動画台本管理
+## 投稿一覧
 
-### ringo__note（栄養士アカウント）
-台本は `scripts/NNN.md` で管理。
+### ringo-note（栄養士）→ [詳細](ringo-note/README.md)
 
-| # | タイトル | 投稿日 | 再生数 | issue |
+| # | タイトル | 状態 | 投稿日 | 再生数 |
 |---|---|---|---|---|
-| [001](scripts/001.md) | キャベツしかない時の美肌焼きそば | 2026-04-21 | 128 | - |
-| [002](scripts/002.md) | 蒸した芋たちの3日後 | 2026-04-22 | 61 | #7 |
-| [003](scripts/003.md) | ChatGPTとクッキング・フレンチトースト | 2026-04-25 | 計測中 | #9 |
+| [001](ringo-note/posts/001/README.md) | キャベツしかない時の美肌焼きそば | published | 2026-04-21 | 128 |
+| [002](ringo-note/posts/002/README.md) | 蒸した芋たちの3日後 | published | 2026-04-22 | 61 |
+| [003](ringo-note/posts/003/README.md) | ChatGPTとクッキング・フレンチトースト | published | 2026-04-25 | 計測中 |
+| [004](ringo-note/posts/004/README.md) | 家にあるスパイス、眠ってない？ | in-progress | 未定 | - |
 
-### ringonote_ai（AIスキル系アカウント）
-台本・素材は `ringonote_ai/posts/NNN/` で管理。詳細 → [ringonote_ai/README.md](ringonote_ai/README.md)
+### ringonote-ai（AIスキル）→ [詳細](ringonote-ai/README.md)
 
-| # | タイトル | 投稿日 | 再生数 | issue |
+| # | タイトル | 状態 | 投稿日 | 再生数 |
 |---|---|---|---|---|
-| [001](ringonote_ai/posts/001/README.md) | 動くプロフィール画像 | 2026-04-29 | 121(v1) | #11 |
-| [002](ringonote_ai/posts/002/script.md) | 動くプロフの作り方 | 未定 | - | - |
+| [001](ringonote-ai/posts/001/README.md) | 動くプロフィール画像 | published | 2026-04-29 | 122(v1) |
+| [002](ringonote-ai/posts/002/script.md) | 動くプロフの作り方 | in-progress | 未定 | - |
 
----
+### YouTube → [詳細](youtube/README.md)
 
-## 2アカウント構成
-
-| | アカウント | コンセプト | プラットフォーム |
+| # | タイトル | 状態 | 公開日 |
 |---|---|---|---|
-| **メイン** | ringo__note | 管理栄養士 × AI料理レシピ | Instagram |
-| **サブ** | ringonote_ai（表示名: りんごノート \| SNS×AI） | AIスキル発信・検証・ツール紹介 | Instagram + YouTube + Twitter |
+| - | 未投稿 | - | - |
 
 ---
 
-## アカウント間の相互リンク方針
+## issueルール
 
-- **現時点:** 相互リンクなし。ringonote_aiが育ってから繋げる
-- **タイミング:** ringonote_aiのフォロワー・投稿数が一定水準になったら、ringo__noteのプロフに `@ringonote_ai` を追加
-
----
-
-## なぜ2アカウントか
-
-- **栄養士アカウント（ringo__note）:** EEAT（専門性・権威性・信頼性）を積み上げる。フォロワーを増やし、長期的な資産にする。
-- **AIスキル系アカウント（サブ）:** 自分がAIスキルを高める過程をそのままコンテンツにする。Seedanceなどのツール検証・動画スキル分析・収益化導線を作る。
-- **相互補完:** 栄養士アカウントの料理コンテンツをAIで自動化する実験が、AIスキル系アカウントのコンテンツになる。
-
----
-
-## フェーズ設計
-
-### フェーズ1（現在〜2026年秋ごろ）
-
-**目標:** 土台作り
-
-- Instagramでフォロワー・再生数を増やす（両アカウント）
-- 栄養士としてのEEATを積む（ringo__note）
-- AIスキル・動画編集スキルを高める → **全部コンテンツにする**
-  - Seedance等のAIツール検証
-  - 自分の動画をAIに分析させて改善 → その過程も投稿
-- YouTubeショートにAIスキル系リールを流用投稿
-
-**GW目標（2026年5月初旬）:**
-- Instagram投稿 2本
-- YouTube本編 1本（Seedance検証 or AI vs 手動比較）
-
-### フェーズ2（2026年秋〜）
-
-**目標:** YouTube本格稼働 + 収益化
-
-- YouTube本編でAIスキル・ツール検証・使い方を発信
-- Seedanceなどを使った生成動画シリーズ
-- **プログラミングスクール・AIツール系の高単価アフィリエイト**を見据えた発信設計
-- YouTube収益化（1,000人 / 4,000時間）達成
-
----
-
-## プラットフォーム別役割
-
-| プラットフォーム | 役割 | 投稿頻度 |
+| アカウント | コード | 例 |
 |---|---|---|
-| Instagram（栄養士） | EEAT・フォロワー獲得 | 週2〜3本 |
-| Instagram（AIスキル系） | AI検証・スキル発信 | 週2〜3本 |
-| YouTube Shorts | AIスキル系リールの流用 | 週2〜3本 |
-| YouTube本編 | 詳細検証・収益化 | 週1本（GW中に初投稿目標） |
-| Twitter | 裏側・日常記録・各アカウントの連携 | 毎日〜週数回 |
+| ringo-note | `[RN]` | `[RN] 004 振り返り` |
+| ringonote-ai | `[AI]` | `[AI] 001 振り返り` |
+| YouTube | `[YT]` | `[YT] ep001 まとめ` |
+| TikTok | `[TK]` | `[TK] ep001 流用` |
+| 設計・共通 | `[設計]` | `[設計] サムネルール` |
 
----
-
-## コンテンツの柱
-
-### 1. AI vs 手動撮影の比較
-- 同じ料理でAI生成 vs 手動撮影
-- クオリティ・コスト・時間の3軸で評価
-- 例: 「フレンチトースト AI vs 手動 どっちがリアル？」
-
-### 2. AIツール検証（Twitterトレンド連動）
-- TwitterでバズったAIツールを実際に試す
-- 例: 「Seedance 2.0 $35課金した結果」「Kling 3.0 vs Seedance」
-
-### 3. 動画スキル向上の過程を見せる
-- 自分の動画をAIに分析させて改善
-- プロンプト改善の試行錯誤をシリーズ化
-- 例: 「AI動画、3回目でやっと自然になった話」
-
-### 4. 栄養士レシピ × AI（ringo__note）
-- ChatGPT・AIでレシピ提案 → 実際に作る
-- 例: 「爆食OKな美肌フレンチトーストをAIに考えてもらった」
-
----
-
-## Seedance投資回収計画
-
-- **課金額:** $35/月（2026年4月〜）
-- **期限:** 1ヶ月以内に成果を出す
-- **戦略:**
-  1. 手動撮影素材を先に撮り溜め
-  2. Seedanceでその素材をAI動画化
-  3. 手動 vs AI の比較コンテンツを量産
-  4. YouTube本編でSeedance検証動画 → アフィリエイト導線
-
----
-
-## 収益化ロードマップ
-
-| 時期 | 手段 |
-|---|---|
-| フェーズ1 | フォロワー・信頼構築。プロンプト無料配布。 |
-| フェーズ2 | YouTube収益化。AIツール・プログラミングスクール系高単価アフィ。 |
-| フェーズ3 | noteでプロンプト集・検証レポート販売。 |
-| フェーズ4 | 管理栄養士アカウント自動化の仕組みを商品化。 |
+- 日付は**本文1行目**に `**日付:** YYYY-MM-DD` で記載
 
 ---
 
 ## リポジトリ構成
 
 ```
-├── docs/                          ドキュメント
-├── templates/                     テンプレート
-│   └── video-script-format.md
-├── scripts/                       台本・素材
-│   ├── 001.md                    焼きそば
-│   ├── 002.md                    芋サラダ
-│   ├── 003.md                    フレンチトースト（手動撮影）
-│   ├── 003-assets/               フレンチトースト × Seedance実験
-│   │   ├── videos/               生成動画
-│   │   ├── prompts-part1.md
-│   │   ├── prompts-part2.md
-│   │   └── experiment-1-summary.md
-│   └── ...
-└── README.md
+/
+├── README.md                    # このファイル（マスターダッシュボード）
+├── design/                      # 共通デザインルール
+│   ├── thumbnail-rules.md
+│   └── screenshots/
+├── templates/                   # 台本テンプレート
+├── ringo-note/                  # Instagram（栄養士）
+│   ├── README.md
+│   └── posts/NNN/
+│       ├── README.md
+│       ├── script.md
+│       └── assets/
+├── ringonote-ai/                # Instagram（AIスキル）+ YouTube Shorts
+│   ├── README.md
+│   └── posts/NNN/
+│       ├── README.md
+│       ├── script-vN.md
+│       └── assets/
+└── youtube/                     # YouTube本編 → TikTok流用
+    ├── README.md
+    └── episodes/NNN/
+        ├── README.md
+        ├── script.md
+        └── assets/
 ```
 
 ---
 
-## Issue管理
+## 関連issue
 
-- **#1〜#5:** 旧コンセプト（料理系）
-- **#6:** フレンチトースト企画
-- **#7:** 動画002振り返り
-- **#8:** Seedance 2.0 第一実験結果 ✅ クローズ済み
-- **#9:** 動画003振り返り（フレンチトースト手動撮影）← 最新
-
----
-
-## 数字記録
-
-**最終更新:** 2026-04-26
-
-| 投稿 | 投稿日 | 再生数 | 音楽 | フック |
-|---|---|---|---|---|
-| 001 焼きそば | 2026-04-21 | 128 | サカナクション「新宝島」 | AI丸投げ食生活 |
-| 002 芋サラダ | 2026-04-22 | 61 | Mrs. GREEN APPLE「ケセラセラ」 | AI丸投げ食生活 |
-| 003 フレンチトースト | 2026-04-25 | 計測中 | 「Run Run Run」（トレンド1位） | ChatGPTとクッキングしてみた |
-
----
-
-## 目標
-
-### 短期（GW中）
-- 🔲 Instagram 2本投稿
-- 🔲 YouTube本編 1本投稿（Seedance検証 or AI vs 手動）
-- 🔲 Seedance Part1・Part2 動画生成完了
-
-### 中期（2026年秋）
-- 🔲 Instagram フォロワー 500人
-- 🔲 YouTube Shorts 開始
-- 🔲 YouTube本編 週1投稿の習慣化
-
-### 長期（2027年〜）
-- 🔲 YouTube収益化達成
-- 🔲 高単価アフィリエイト収益化
-- 🔲 管理栄養士アカウント自動化達成
+| issue | 内容 |
+|---|---|
+| #13 | [RN] コンセプト再設計 |
+| #14 | [設計] サムネ・フックルール |
+| #15 | [設計] リポジトリ構成・issueルール確定 |
