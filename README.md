@@ -1,7 +1,8 @@
 # Instagram / YouTube 2アカウント運用プロジェクト
 
 **運営者:** ringo__note  
-**開始:** 2026年4月
+**開始:** 2026年4月  
+**最終更新:** 2026年4月29日
 
 ---
 
@@ -9,9 +10,30 @@
 
 毎回この流れで作る。
 
-1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使って `scripts/NNN.md` を作成
+1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使って台本作成
 2. **撮影・編集・投稿**
 3. **issueで振り返り** → 再生数が出たらissueに記録・分析
+
+---
+
+## 動画台本管理
+
+### ringo__note（栄養士アカウント）
+台本は `scripts/NNN.md` で管理。
+
+| # | タイトル | 投稿日 | 再生数 | issue |
+|---|---|---|---|---|
+| [001](scripts/001.md) | キャベツしかない時の美肌焼きそば | 2026-04-21 | 128 | - |
+| [002](scripts/002.md) | 蒸した芋たちの3日後 | 2026-04-22 | 61 | #7 |
+| [003](scripts/003.md) | ChatGPTとクッキング・フレンチトースト | 2026-04-25 | 計測中 | #9 |
+
+### ringonote_ai（AIスキル系アカウント）
+台本・素材は `ringonote_ai/posts/NNN/` で管理。詳細 → [ringonote_ai/README.md](ringonote_ai/README.md)
+
+| # | タイトル | 投稿日 | 再生数 | issue |
+|---|---|---|---|---|
+| [001](ringonote_ai/posts/001/README.md) | 動くプロフィール画像 | 2026-04-29 | 121(v1) | #11 |
+| [002](ringonote_ai/posts/002/script.md) | 動くプロフの作り方 | 未定 | - | - |
 
 ---
 
