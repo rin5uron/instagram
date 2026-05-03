@@ -1,6 +1,6 @@
 ---
 project: SNS運用プロジェクト
-last_updated: "2026-04-29"
+last_updated: "2026-05-02"
 ---
 
 # SNS運用プロジェクト マスターダッシュボード
@@ -33,7 +33,16 @@ last_updated: "2026-04-29"
 
 1. **台本生成** → [templates/video-script-format.md](templates/video-script-format.md) を使用
 2. **撮影・編集・投稿**
-3. **issueで振り返り** → 再生数が出たらissueに記録
+3. **動画保管** → CapCutからエクスポートしたら Claude Code に「動画保管して」と伝える
+   - Claudeが実行するコマンド: `cp ~/Movies/CapCut/<タイトル>.mp4 <account>/posts/NNN/assets/YYMMDD_NNN-<slug>.mp4`
+4. **振り返り** → 投稿後すぐ Claude Code に「[RN] NNN 振り返りして」と伝える
+   - 制作時間・動画時間・フック・音楽・AIへの質問を一緒に伝えると即作成できる
+   - Claudeが過去issueを参照して比較テーブル付きで作成する
+   - 振り返りフォーマット → [docs/video-review-rules.md](docs/video-review-rules.md)
+   - Claudeが実行するコマンド:
+   ```bash
+   gh issue create --title "[RN] NNN 振り返り" --body "..." --label log
+   ```
 
 ---
 
@@ -46,7 +55,8 @@ last_updated: "2026-04-29"
 | [001](ringo-note/posts/001/README.md) | キャベツしかない時の美肌焼きそば | published | 2026-04-21 | 128 |
 | [002](ringo-note/posts/002/README.md) | 蒸した芋たちの3日後 | published | 2026-04-22 | 61 |
 | [003](ringo-note/posts/003/README.md) | ChatGPTとクッキング・フレンチトースト | published | 2026-04-25 | 計測中 |
-| [004](ringo-note/posts/004/README.md) | 家にあるスパイス、眠ってない？ | in-progress | 未定 | - |
+| [004](ringo-note/posts/004/README.md) | 家にあるスパイス、眠ってない？ | published | 2026-05-02 | 計測中 |
+| [005](ringo-note/posts/005/README.md) | 昼飲みVlog｜飲み会翌日 顔パンパンな人 これだけやって！ | published | 2026-05-03 | 計測中 |
 
 ### ringonote-ai（AIスキル）→ [詳細](ringonote-ai/README.md)
 
@@ -63,7 +73,7 @@ last_updated: "2026-04-29"
 
 ---
 
-## issueルール
+## issueルール → [詳細](docs/issue-rules.md)
 
 | アカウント | コード | 例 |
 |---|---|---|
@@ -75,6 +85,7 @@ last_updated: "2026-04-29"
 | 学習・アウトプット | `[学び]` | `[学び] 学習・アウトプットログ` |
 
 - 日付は**本文1行目**に `**日付:** YYYY-MM-DD` で記載
+- issueはCLIで作成: `gh issue create --title "..." --body "..." --label log`
 
 ---
 
@@ -106,6 +117,16 @@ last_updated: "2026-04-29"
         ├── script.md
         └── assets/
 ```
+
+---
+
+## 設計資料（台本作成前に見返す）
+
+| issue | 内容 |
+|---|---|
+| [#19](https://github.com/rin5uron/instagram/issues/19) | ポジション確立・ヒーローズジャーニー・属人性 |
+| [#20](https://github.com/rin5uron/instagram/issues/20) | ターゲット・発信内容・収益想定・2アカウントのトーン |
+| [#18](https://github.com/rin5uron/instagram/issues/18) | トークリール台本作成プロンプト |
 
 ---
 
