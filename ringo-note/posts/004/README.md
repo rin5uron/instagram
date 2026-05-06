@@ -2,8 +2,8 @@
 post: "004"
 title: 家にあるスパイス、眠ってない？
 account: ringo-note
-status: in-progress
-published_date: null
+status: published
+published_date: "2026-05-02"
 hook: 家にあるスパイス、眠ってない？
 issue: null
 ---

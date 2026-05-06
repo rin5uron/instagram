@@ -2,7 +2,7 @@
 account: ringo-note
 instagram: ringo__note
 concept: ニートになった管理栄養士が、生活を崩さないためにGPTにごはんを丸投げするリアル記録
-last_updated: "2026-04-29"
+last_updated: "2026-05-05"
 ---
 
 # ringo-note（栄養士アカウント）

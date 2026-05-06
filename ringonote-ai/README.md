@@ -1,13 +1,14 @@
 ---
 account: ringonote_ai
 display_name: "りんごノート | SNS×AI"
+concept: AIに任せて、自分の時間を取り戻す実験中
 platform: Instagram / YouTube / Twitter
-last_updated: "2026-04-29"
+last_updated: "2026-05-05"
 ---
 
 # ringonote_ai
 
-**コンセプト:** SNSで使えるAIスキル発信中🍎 AI活用しながらインスタ運用を勉強中
+**コンセプト:** AIに任せて、自分の時間を取り戻す実験中
 
 ## ディレクトリ構成
 
